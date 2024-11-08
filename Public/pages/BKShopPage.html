@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Shop Page</title>
+    <link rel="stylesheet" href="../css/BKShopPage.css"> <!-- Adjusted path to be relative -->
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="header-top">
+
+            <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+
+            <div class="logo">
+                <img src="../assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo"> <!-- Adjusted logo image -->
+                <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search product here...">
+                <button><i class="search-icon"></i></button>
+            </div>
+            <div class="cart-login">
+                <a href="../pages/BKLoginandRegister.html#login">Log In</a> |
+                <a href="../pages/BKLoginandRegister.html#register">Register</a>
+                <a href="#" id="cart-link">
+                    <img src="../assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul id="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../pages/BKShopPage.html">Shop</a>
+                    <ul class="sub-nav">
+                        <li><a href="../pages/BKShopPage.html">Recent Arrivals</a></li>
+                        <li><a href="../pages/BKShopPage.html">Categories</a></li>
+                        <li><a href="../pages/BKShopPage.html">Brands</a></li>
+                        <li><a href="../pages/BKShopPage.html">On Sale</a></li>
+                        <li><a href="../pages/BKShopPage.html">Best Sellers</a></li>
+                        <li><a href="../pages/BKShopPage.html">Limited Edition</a></li>
+                        <li><a href="../pages/BKShopPage.html">Build Your Unit</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/BKAboutPage.html">About</a>
+                    <ul class="sub-nav">
+                        <li><a href="../pages/BKAboutPage.html#background">Background</a></li>
+                        <li><a href="../pages/BKAboutPage.html#founders">Founders</a></li>
+                        <li><a href="../pages/BKAboutPage.html#mission-vision">Mission & Vision</a></li>
+                        <li><a href="../pages/BKAboutPage.html#core-values">Core Values</a></li>
+                        <li><a href="../pages/BKAboutPage.html#branches">Branches</a></li>
+                        <li><a href="../pages/BKAboutPage.html#contact-info">Contact Information</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/BKMorePage.html">More</a>
+                    <ul class="sub-nav">
+                        <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                        <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                        <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                        <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                        <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                        <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile/Tablet Icons for Search, User, and Cart -->
+    <div class="mobile-icons">
+        <img src="../assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
+        <img src="../assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
+        <a href="#" id="cart-link">
+            <img src="../assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+
+    <!-- Sidebar Navigation for Mobile/Tablet -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-sidebar">&#x2190;</div> <!-- Arrow icon for Close Button -->
+        <ul>
+            <li><a href="../index.html" id="sidebar-home">Home</a></li>
+            <li class="dropdown">
+                <a href="../pages/BKShopPage.html" id="sidebar-shop" class="dropdown-toggle">Shop</a>
+                <ul class="sub-nav">
+                    <li><a href="../pages/BKShopPage.html">Recent Arrivals</a></li>
+                    <li><a href="../pages/BKShopPage.html">Categories</a></li>
+                    <li><a href="../pages/BKShopPage.html">Brands</a></li>
+                    <li><a href="../pages/BKShopPage.html">On Sale</a></li>
+                    <li><a href="../pages/BKShopPage.html">Best Sellers</a></li>
+                    <li><a href="../pages/BKShopPage.html">Limited Edition</a></li>
+                    <li><a href="../pages/BKShopPage.html">Build Your Unit</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="../pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+                <ul class="sub-nav">
+                    <li><a href="../pages/BKAboutPage.html">Background</a></li>
+                    <li><a href="../pages/BKAboutPage.html">Founders</a></li>
+                    <li><a href="../pages/BKAboutPage.html">Mission & Vision</a></li>
+                    <li><a href="../pages/BKAboutPage.html">Core Values</a></li>
+                    <li><a href="../pages/BKAboutPage.html">Branches</a></li>
+                    <li><a href="../pages/BKAboutPage.html">Contact Information</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="../pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
+                <ul class="sub-nav">
+                    <li><a href="../pages/BKMorePage.html">Privacy Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html">Availability</a></li>
+                    <li><a href="../pages/BKMorePage.html">Payment Methods</a></li>
+                    <li><a href="../pages/BKMorePage.html">Shipping Information</a></li>
+                    <li><a href="../pages/BKMorePage.html">Return and Refund Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html">Warranty and Support</a></li>
+                    <li><a href="../pages/BKMorePage.html">FAQs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Shop Page Structure -->
+    <main>
+        <aside id="filter-sidebar">
+            <div class="filter-section">
+                <h3>Filter by Price</h3>
+                <input type="range" min="0" max="120000" step="1000" id="price-range" oninput="updatePriceRange(this.value)" />
+                <span id="price-range-label">Price: ₱0 — ₱120,000</span>
+            </div>
+
+            <div class="filter-section">
+                <h3>Product Categories</h3>
+                <ul>
+                    <li><input type="checkbox" id="cat-acers" /> Acer (17)</li>
+                    <li><input type="checkbox" id="cat-laptops" /> Laptops (11)</li>
+                    <li><input type="checkbox" id="cat-projectors" /> Projectors (2)</li>
+                    <li><input type="checkbox" id="cat-desktop" /> Desktop (1)</li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Top Rated Items</h3>
+                <ul>
+                    <li>
+                        <p>Comlink USB 3.0 to LAN Adapter</p>
+                        <p>₱295.00</p>
+                    </li>
+                    <li>
+                        <p>Gigabyte B550M DS3H AM4 Motherboard</p>
+                        <p>₱6,495.00</p>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="product-list">
+            <h2>Acer Products</h2>
+            <p>Showing 1-9 of 17 results</p>
+            
+            <div class="product-grid" id="products">
+                <div class="product-item">
+                    <img src="../assets/laptop1.jpg" alt="Acer Swift GO"> <!-- Corrected product image path -->
+                    <h3>Acer Swift GO 14</h3>
+                    <p>Intel Core i9, 16GB RAM, 1TB SSD</p>
+                    <p class="price">₱64,495.00</p>
+                    <p>₱6,041.25 / Mo.</p>
+                </div>
+
+                <div class="product-item">
+                    <img src="../assets/laptop2.jpg" alt="Acer Aspire 3"> <!-- Corrected product image path -->
+                    <h3>Acer Aspire 3</h3>
+                    <p>AMD Ryzen 7, 16GB RAM, 512GB SSD</p>
+                    <p class="price">₱36,995.00</p>
+                    <p>₱3,454.17 / Mo.</p>
+                </div>
+
+                <div class="product-item">
+                    <img src="../assets/laptop3.jpg" alt="Acer Aspire 15"> <!-- Corrected product image path -->
+                    <h3>Acer Aspire 15</h3>
+                    <p>Intel Core i3, 8GB RAM, 512GB SSD</p>
+                    <p class="price">₱27,995.00</p>
+                    <p>₱2,632.92 / Mo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at info@bytekingstechshop.com</p>
+        <p>&copy; 2024 ByteKings Techshop. All rights reserved.</p>
+        <div class="social">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="../js/BKShopPage.js"></script> <!-- Corrected JS path -->
+    <script src="../js/index.js"></script>
+</body>
+</html>

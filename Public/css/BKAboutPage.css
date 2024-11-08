@@ -1,0 +1,480 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Bebas+Neue&family=Lato:wght@400&family=Poppins:wght@400&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background: url('../assets/BackgroundHP.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Font Styling */
+.bytekings-font {
+    font-family: 'Orbitron', sans-serif;
+    color: #36a1ff;
+}
+
+.bytekings-font.kings {
+    color: white;
+}
+
+/* Header Styles */
+/* Header */
+header {
+    flex-shrink: 0;
+    background: linear-gradient(to bottom, black 10%, rgba(0, 0, 0, 0.3) 100%);
+    color: white;
+    padding: 5px 10px;  /* Reduced padding to decrease overall height */
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+/* Main header container */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 150;
+    flex-wrap: wrap;
+    padding: 5px 15px; /* Reduced padding for a more compact look */
+}
+
+/* Logo Image */
+.header-logo {
+    width: 45px;  /* Reduced width of the logo image */
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.logo h1 {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo .byte {
+    color: #36a1ff;
+}
+
+.logo .kings {
+    color: white;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 350px;
+    margin: 0 10px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 3px 8px;
+    border: 1px solid #36a1ff;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #36a1ff;
+    border: none;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #1e82d8;
+}
+
+
+/* Cart and Login */
+.cart-login {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.cart-login a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: normal;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cart-login a:hover {
+    background-color: #36a1ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.cart-login img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.cart-count {
+    background-color: #36a1ff;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 101;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active,
+nav ul li a.active:hover {
+    background-color: #36a1ff;
+    color: white;
+}
+
+/* Dropdown Menu */
+.sub-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(10px);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 200;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .sub-nav {
+    display: block;
+}
+
+.sub-nav li {
+    margin: 5px 0;
+}
+
+.sub-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sub-nav li a:hover {
+    background-color: #36a1ff;
+}
+
+/* Mobile/Tablet Icons for Search, User, and Cart */
+.mobile-icons {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    right: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    top: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease; /* Added similar transition */
+    outline: none; /* Remove default outline to prevent square borders */
+    border: 2px solid transparent; /* Ensure no visible border initially */
+    border-radius: 10px; /* Curved edges for both default and focus state */
+}
+
+.hamburger:hover,
+.hamburger:focus {
+    background-color: #36a1ff; /* Updated highlight color */
+    border-radius: 10px; /* Box with curved edges */
+    border-color: #36a1ff; /* Highlight border on hover and focus */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Mobile/Tablet Styles */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px; /* Adjusted height */
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    /* Show mobile icons in mobile/tablet mode */
+    .mobile-icons {
+        display: flex;
+        align-items: center;
+        right: 14px;
+        top: 13px;
+        gap: 5px; /* Maintain spacing between icons */
+    }
+
+    /* Center the logo in mobile/tablet mode */
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 101;
+    }
+
+    /* Hide cart-login (Log In | Sign In) and search bar in mobile/tablet mode */
+    .cart-login,
+    .search-bar {
+        display: none;
+    }
+
+    /* Show hamburger in mobile/tablet mode */
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        top: 23px;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger:hover {
+        transform: scale(1.1);
+    }
+
+    #user-icon,
+    #search-icon,
+    #cart-icon {
+        display: block;
+        width: 27px;  /* Set uniform width */
+        height: 27px; /* Set uniform height */
+        cursor: pointer;
+        transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+        outline: none; /* Remove default outline to prevent square borders */
+        border: 2px solid transparent; /* Ensure no visible border initially */
+        border-radius: 10px; /* Curved edges for both default and focus state */
+    }
+
+    #cart-icon {
+        margin-top: 18px; /* Adjust this value to move the cart icon down */
+    }
+
+    #user-icon:hover,
+    #search-icon:hover,
+    #cart-icon:hover,
+    #user-icon:focus,
+    #search-icon:focus,
+    #cart-icon:focus {
+        background-color: #36a1ff; /* Updated highlight color */
+        border-radius: 10px; /* Box with curved edges */
+        border-color: #36a1ff; /* Highlight border on hover and focus */
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .show-sidebar {
+        left: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #nav-list.show {
+        display: flex;
+        flex-direction: column;
+        background-color: #00000000;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+    }
+
+    #nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-nav {
+        position: static;
+        background-color: #00000081;
+        padding: 0;
+        border-radius: 5px;
+    }
+}
+
+/* Offset for Fixed Header in the About Page Content */
+.about-page-content {
+    padding-top: 100px; /* Increased top padding to match new header spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+/* Curved Box Styling with Transparent, Blurry Background */
+.about-section {
+    max-width: 800px; /* Limit the width */
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    margin: 0 auto 30px; /* Center and add space between sections */
+}
+
+/* Title Font for Each Section */
+.about-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #36a1ff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background: linear-gradient(to top, black 10%, rgba(0, 0, 0, 0.3) 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+footer .social a {
+    color: #36a1ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sidebar for Mobile */
+.sidebar {
+    display: none;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px; /* Initially off-screen */
+    top: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.3) 100%);
+    color: white;
+    overflow-y: auto;
+    transition: left 0.5s ease; /* Smooth transition for sidebar position */
+    z-index: 300;
+    padding-top: 20px;
+    border-top-right-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.show-sidebar {
+    left: 0; /* Brings sidebar into view */
+    display: block;
+}
+
+.close-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    text-align: right;
+    font-size: 24px;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #36a1ff;
+}
+
+/* Force display on hover for desktop view */
+@media (min-width: 769px) {
+    .desktop-nav .dropdown:hover > .sub-nav {
+        display: block !important;
+    }
+}

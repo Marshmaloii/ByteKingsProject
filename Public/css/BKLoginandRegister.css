@@ -1,0 +1,134 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../assets/Background3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    margin-top: 10px; /* Adjusted margin to prevent overlap */
+    position: relative;
+}
+
+.form-logo {
+    margin-bottom: 5px; /* Reduced margin to bring logo closer to the text */
+}
+
+.logo-image {
+    width: 80px; /* Reduced logo size */
+    height: auto;
+}
+
+.form h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #36a1ff;
+    text-align: center;
+    margin-top: 5px; /* Reduced margin to bring text closer to the logo */
+    margin-bottom: 15px; /* Added margin to create space between the title and the Back link */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ccc;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+input[type="email"].error,
+input[type="password"].error,
+input[type="text"].error,
+input[type="tel"].error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    text-align: left;
+}
+
+button[type="submit"],
+.back-button {
+    background-color: #36a1ff;
+    color: #fff;
+    padding: 8px; /* Adjusted padding to make the button smaller */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px; /* Adjusted width to make the button smaller */
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 15px 5px 0 5px; /* Adjusted margin for spacing between buttons */
+}
+
+button[type="submit"]:hover,
+.back-button:hover {
+    background-color: #2b82cc;
+}
+
+.switch-form {
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.switch-form .toggle-link {
+    color: #36a1ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-form .toggle-link:hover {
+    color: #2b82cc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="tel"],
+    button[type="submit"],
+    .back-button {
+        width: calc(100% - 30px);
+        margin: 5px auto;
+    }
+}

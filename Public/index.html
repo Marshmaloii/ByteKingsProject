@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteKings - Home</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+
+            <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+
+            <div class="logo">
+                <img src="assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo"> <!-- Adjusted logo image -->
+                <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search product here...">
+                <button><i class="search-icon"></i></button>
+            </div>
+            <div class="cart-login">
+                <a href="/pages/BKLoginandRegister.html#login">Log In</a> |
+                <a href="/pages/BKLoginandRegister.html#register">Register</a>
+                <a href="#" id="cart-link">
+                    <img src="assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="desktop-nav">
+            <ul id="nav-list">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="/pages/BKShopPage.html">Shop</a>
+                    <ul class="sub-nav">
+                        <li><a href="/pages/BKShopPage.html">Recent Arrivals</a></li>
+                        <li><a href="/pages/BKShopPage.html">Categories</a></li>
+                        <li><a href="/pages/BKShopPage.html">Brands</a></li>
+                        <li><a href="/pages/BKShopPage.html">On Sale</a></li>
+                        <li><a href="/pages/BKShopPage.html">Best Sellers</a></li>
+                        <li><a href="/pages/BKShopPage.html">Limited Edition</a></li>
+                        <li><a href="/pages/BKShopPage.html">Build Your Unit</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/pages/BKAboutPage.html">About</a>
+                    <ul class="sub-nav">
+                        <li><a href="/pages/BKAboutPage.html#background">Background</a></li>
+                        <li><a href="/pages/BKAboutPage.html#founders">Founders</a></li>
+                        <li><a href="/pages/BKAboutPage.html#mission-vision">Mission & Vision</a></li>
+                        <li><a href="/pages/BKAboutPage.html#core-values">Core Values</a></li>
+                        <li><a href="/pages/BKAboutPage.html#branches">Branches</a></li>
+                        <li><a href="/pages/BKAboutPage.html#contact-info">Contact Information</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="pages/BKMorePage.html">More</a>
+                    <ul class="sub-nav">
+                        <li><a href="/pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/pages/BKMorePage.html#availability">Availability</a></li>
+                        <li><a href="/pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                        <li><a href="/pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                        <li><a href="/pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                        <li><a href="/pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                        <li><a href="/pages/BKMorePage.html#faqs">FAQs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile/Tablet Icons for Search, User, and Cart -->
+    <div class="mobile-icons">
+        <img src="assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
+        <img src="assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
+        <a href="#" id="cart-link">
+            <img src="assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+
+    <!-- Sidebar Navigation for Mobile/Tablet -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-sidebar">&#x2190;</div> <!-- Arrow icon for Close Button -->
+        <ul>
+            <li><a href="/index.html" id="sidebar-home">Home</a></li>
+            <li class="dropdown">
+                <a href="/pages/BKShopPage.html" id="sidebar-shop" class="dropdown-toggle">Shop</a>
+                <ul class="sub-nav">
+                    <li><a href="/pages/BKShopPage.html">Recent Arrivals</a></li>
+                    <li><a href="/pages/BKShopPage.html">Categories</a></li>
+                    <li><a href="/pages/BKShopPage.html">Brands</a></li>
+                    <li><a href="/pages/BKShopPage.html">On Sale</a></li>
+                    <li><a href="/pages/BKShopPage.html">Best Sellers</a></li>
+                    <li><a href="/pages/BKShopPage.html">Limited Edition</a></li>
+                    <li><a href="/pages/BKShopPage.html">Build Your Unit</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="/pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+                <ul class="sub-nav">
+                    <li><a href="/pages/BKAboutPage.html">Background</a></li>
+                    <li><a href="/pages/BKAboutPage.html">Founders</a></li>
+                    <li><a href="/pages/BKAboutPage.html">Mission & Vision</a></li>
+                    <li><a href="/pages/BKAboutPage.html">Core Values</a></li>
+                    <li><a href="/pages/BKAboutPage.html">Branches</a></li>
+                    <li><a href="/pages/BKAboutPage.html">Contact Information</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="/pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
+                <ul class="sub-nav">
+                    <li><a href="/pages/BKMorePage.html">Privacy Policy</a></li>
+                    <li><a href="/pages/BKMorePage.html">Availability</a></li>
+                    <li><a href="/pages/BKMorePage.html">Payment Methods</a></li>
+                    <li><a href="/pages/BKMorePage.html">Shipping Information</a></li>
+                    <li><a href="/pages/BKMorePage.html">Return and Refund Policy</a></li>
+                    <li><a href="/pages/BKMorePage.html">Warranty and Support</a></li>
+                    <li><a href="/pages/BKMorePage.html">FAQs</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="slider">
+            <div class="slide">
+                <img src="assets/ByteKingsLogo.png" alt="ByteKings">
+                <div class="slide-caption">
+                    <h2><span class="bytekings-font">ByteKings</span></h2>
+                    <p>Your Ultimate Tech Shopping Destination</p>
+                    <a href="/pages/BKShopPage.html" class="shop-btn">Shop Now</a> <!-- Updated class name -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Questions? Call: (123) 456-7890 | Email: info@bytekingstechshop.com</p>
+        <p>#123 Tech Street, Davao City, 8000</p>
+        <div class="social">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src = "/js/index.js"></script>
+</body>
+
+</html>

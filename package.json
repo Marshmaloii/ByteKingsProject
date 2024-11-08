@@ -1,0 +1,20 @@
+{
+  "name": "bytekings_proj",
+  "version": "1.0.0",
+  "main": "Server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Server/server.js",
+    "dev": "nodemon Server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
