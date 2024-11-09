@@ -14,7 +14,7 @@ html, body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     color: white;
-    background: url('../assets/Background4.png') no-repeat center center fixed;
+    background: url('../assets/Background4.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -464,4 +464,128 @@ footer .social a {
     .desktop-nav .dropdown:hover > .sub-nav {
         display: block !important;
     }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.product-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #36a1ff;
+}
+
+.product-item .category {
+    font-size: 0.8em; /* Made category font smaller */
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.product-item .brand {
+    font-weight: bold;
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-item .price,
+.product-item .down-payment {
+    font-family: 'Lato', sans-serif;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.product-item .price {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.product-item .down-payment {
+    color: #888;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Make buttons align at the bottom */
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #36a1ff;
+    color: #36a1ff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cart-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.cart-button:hover {
+    background: #36a1ff;
+    color: #fff;
+}
+
+.remove-button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #ffcc00; /* Changed outline to yellow */
+    color: #ffcc00; /* Changed text color to yellow */
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.remove-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.remove-button:hover {
+    background: #ffcc00;
+    color: #ffffff;
 }

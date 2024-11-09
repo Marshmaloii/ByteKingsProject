@@ -9,173 +9,171 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-top">
-            <div class="hamburger" id="hamburger">&#9776;</div>
-            <div class="logo">
-                <img src="/assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo">
-                <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button><i class="search-icon"></i></button>
-            </div>
-            <div class="cart-login">
-                <a href="/pages/BKLoginandRegister.html#login">Log In</a> |
-                <a href="/pages/BKLoginandRegister.html#register">Register</a>
-                <a href="#"><img src="/assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span></a>
-            </div>
-        </div>
-        <!-- Navigation -->
-        <nav class="desktop-nav">
-            <ul id="nav-list">
-                <li><a href="/index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="/pages/BKShopPage.html">Shop</a>
-                    <ul class="sub-nav">
-                        <li><a href="/pages/BKShopPage.html">Recent Arrivals</a></li>
-                        <li><a href="/pages/BKShopPage.html">Categories</a></li>
-                        <li><a href="/pages/BKShopPage.html">Brands</a></li>
-                        <li><a href="/pages/BKShopPage.html">On Sale</a></li>
-                        <li><a href="/pages/BKShopPage.html">Best Sellers</a></li>
-                        <li><a href="/pages/BKShopPage.html">Limited Edition</a></li>
-                        <li><a href="/pages/BKShopPage.html">Build Your Unit</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="/pages/BKAboutPage.html">About</a>
-                    <ul class="sub-nav">
-                        <li><a href="#background">Background</a></li>
-                        <li><a href="#founders">Founders</a></li>
-                        <li><a href="#mission-vision">Mission & Vision</a></li>
-                        <li><a href="#core-values">Core Values</a></li>
-                        <li><a href="#branches">Branches</a></li>
-                        <li><a href="#contact-info">Contact Information</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="/pages/BKMorePage.html">More</a>
-                    <ul class="sub-nav">
-                        <li><a href="/pages/BKMorePage.html">Privacy Policy</a></li>
-                        <li><a href="/pages/BKMorePage.html">Availability</a></li>
-                        <li><a href="/pages/BKMorePage.html">Payment Methods</a></li>
-                        <li><a href="/pages/BKMorePage.html">Shipping Information</a></li>
-                        <li><a href="/pages/BKMorePage.html">Return and Refund Policy</a></li>
-                        <li><a href="/pages/BKMorePage.html">Warranty and Support</a></li>
-                        <li><a href="/pages/BKMorePage.html">FAQs</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header and Navigation -->
+<header>
+    <div class="header-top">
 
-    <!-- Mobile/Tablet Icons for Search, User, and Cart -->
-    <div class="mobile-icons">
-        <img src="/assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
-        <img src="/assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
-        <a href="#" id="cart-link">
-            <img src="/assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
-            <span class="cart-count">0</span>
-        </a>
+        <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+
+        <div class="logo">
+            <img src="../assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo"> <!-- Adjusted logo image -->
+            <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search product here...">
+            <button><i class="search-icon"></i></button>
+        </div>
+        <div class="cart-login">
+            <a href="../pages/BKLoginandRegister.html#login">Log In</a> |
+            <a href="../pages/BKLoginandRegister.html#register">Register</a>
+            <a href="../pages/BKCartPage.html" id="cart-link">
+                <img src="../assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span>
+            </a>
+        </div>
     </div>
 
-    <!-- Sidebar Navigation for Mobile/Tablet -->
-    <div class="sidebar" id="sidebar">
-        <div class="close-btn" id="close-sidebar">&#x2190;</div>
-        <ul>
-            <li><a href="/index.html" id="sidebar-home">Home</a></li>
+    <nav class="desktop-nav">
+        <ul id="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/BKShopPage.html">Shop</a></li>
             <li class="dropdown">
-                <a href="/pages/BKShopPage.html" id="sidebar-shop" class="dropdown-toggle">Shop</a>
+                <a href="../pages/BKAboutPage.html">About</a>
                 <ul class="sub-nav">
-                    <li><a href="/pages/BKShopPage.html">Recent Arrivals</a></li>
-                    <li><a href="/pages/BKShopPage.html">Categories</a></li>
-                    <li><a href="/pages/BKShopPage.html">Brands</a></li>
-                    <li><a href="/pages/BKShopPage.html">On Sale</a></li>
-                    <li><a href="/pages/BKShopPage.html">Best Sellers</a></li>
-                    <li><a href="/pages/BKShopPage.html">Limited Edition</a></li>
-                    <li><a href="/pages/BKShopPage.html">Build Your Unit</a></li>
+                    <li><a href="../pages/BKAboutPage.html#background">Background</a></li>
+                    <li><a href="../pages/BKAboutPage.html#founders">Founders</a></li>
+                    <li><a href="../pages/BKAboutPage.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="../pages/BKAboutPage.html#core-values">Core Values</a></li>
+                    <li><a href="../pages/BKAboutPage.html#branches">Branches</a></li>
+                    <li><a href="../pages/BKAboutPage.html#contact-info">Contact Information</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="/pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+                <a href="../pages/BKMorePage.html">More</a>
                 <ul class="sub-nav">
-                    <li><a href="#background">Background</a></li>
-                    <li><a href="#founders">Founders</a></li>
-                    <li><a href="#mission-vision">Mission & Vision</a></li>
-                    <li><a href="#core-values">Core Values</a></li>
-                    <li><a href="#branches">Branches</a></li>
-                    <li><a href="#contact-info">Contact Information</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="/pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
-                <ul class="sub-nav">
-                    <li><a href="/pages/BKMorePage.html">Privacy Policy</a></li>
-                    <li><a href="/pages/BKMorePage.html">Availability</a></li>
-                    <li><a href="/pages/BKMorePage.html">Payment Methods</a></li>
-                    <li><a href="/pages/BKMorePage.html">Shipping Information</a></li>
-                    <li><a href="/pages/BKMorePage.html">Return and Refund Policy</a></li>
-                    <li><a href="/pages/BKMorePage.html">Warranty and Support</a></li>
-                    <li><a href="/pages/BKMorePage.html">FAQs</a></li>
+                    <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                    <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                    <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                    <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                    <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
                 </ul>
             </li>
         </ul>
-    </div>
+    </nav>
+</header>
 
-    <!-- About Page Content -->
+<!-- Mobile/Tablet Icons for Search, User, and Cart -->
+<div class="mobile-icons">
+    <img src="../assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
+    <img src="../assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
+    <a href="../pages/BKCartPage.html" id="cart-link">
+        <img src="../assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
+        <span class="cart-count">0</span>
+    </a>
+</div>
+
+<!-- Sidebar Navigation for Mobile/Tablet -->
+<div class="sidebar" id="sidebar">
+    <div class="close-btn" id="close-sidebar">&#x2190;</div> <!-- Arrow icon for Close Button -->
+    <ul>
+        <li><a href="../index.html" id="sidebar-home">Home</a></li>
+        <li><a href="../pages/BKShopPage.html" id="sidebar-shop">Shop</a></li>
+        <li class="dropdown">
+            <a href="../pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+            <ul class="sub-nav">
+                <li><a href="../pages/BKAboutPage.html">Background</a></li>
+                <li><a href="../pages/BKAboutPage.html">Founders</a></li>
+                <li><a href="../pages/BKAboutPage.html">Mission & Vision</a></li>
+                <li><a href="../pages/BKAboutPage.html">Core Values</a></li>
+                <li><a href="../pages/BKAboutPage.html">Branches</a></li>
+                <li><a href="../pages/BKAboutPage.html">Contact Information</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="../pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
+            <ul class="sub-nav">
+                <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
     <main class="about-page-content">
-        <section id="background" class="about-section">
-            <h2>Background of the Company</h2>
-            <p>Founded to cater to computer engineering students, tech enthusiasts, and hobbyists, Byte Kings simplifies the process of finding affordable, high-quality computer components. Our platform is designed to support students who are on tight budgets by offering reliable, vetted products at competitive prices. Through Byte Kings, students and PC builders can save time and make informed choices.</p>
-        </section>
-
-        <section id="founders" class="about-section">
-            <h2>Founders</h2>
-            <p>Byte Kings was established by a team of passionate computer engineers and tech aficionados who understood the specific challenges that students and novice builders face. Driven by their commitment to affordable tech solutions, the founders have worked to build a trusted marketplace that blends both quality and value for customers of all backgrounds.</p>
-        </section>
-
-        <section id="mission-vision" class="about-section">
-            <h2>Mission and Vision</h2>
-            <p><strong>Mission:</strong> To empower students and tech enthusiasts by offering high-quality, affordable computer components, expert guidance, and a seamless shopping experience. We aim to be the first choice for tech gear that balances quality and affordability.</p>
-            <p><strong>Vision:</strong> Byte Kings aspires to be a go-to platform for tech solutions, promoting accessibility and inclusivity in tech for all, especially students and first-time builders. Our vision is to nurture a community where reliable tech is readily available for everyone.</p>
-        </section>
-
-        <section id="core-values" class="about-section">
-            <h2>Core Values</h2>
-            <ul>
-                <li><strong>Quality First:</strong> We prioritize high standards to ensure that our products consistently meet or exceed customer expectations.</li>
-                <li><strong>Affordability:</strong> Byte Kings believes in making tech accessible and budget-friendly, helping our customers find the right products without compromise.</li>
-                <li><strong>Customer Support:</strong> Expert guidance is a cornerstone of Byte Kings, with a focus on helping each customer feel confident and supported in their tech journey.</li>
-                <li><strong>Transparency:</strong> Clear, honest communication is paramount, ensuring that our customers always know exactly what they’re getting.</li>
-                <li><strong>Community-Focused:</strong> Byte Kings is built around the needs of students and enthusiasts, nurturing a welcoming environment where tech knowledge is shared.</li>
-            </ul>
-        </section>
-
-        <section id="branches" class="about-section">
-            <h2>Branches</h2>
-            <p>Byte Kings currently operates in several key areas to enhance shipping efficiency and support for our users:</p>
-            <ul>
-                <li>Metro Manila, Philippines – Our main distribution hub</li>
-                <li>Cebu, Philippines – Strategic location for quick and efficient service across the region</li>
-                <li>Davao, Philippines – Local support for tech needs in Mindanao</li>
-            </ul>
-        </section>
-
-        <section id="contact-info" class="about-section">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> support@bytekingstechshop.com</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Address:</strong> #123 Tech Street, Davao City, Philippines, 8000</p>
-        </section>
+        <div class="container">
+            <section id="background" class="about-section">
+                <h2 class="section-title">Background of the Company</h2>
+                <div class="section-content">
+                    <p>Founded to cater to computer engineering students, tech enthusiasts, and hobbyists, Byte Kings simplifies the process of finding affordable, high-quality computer components. Our platform is designed to support students who are on tight budgets by offering reliable, vetted products at competitive prices. Through Byte Kings, students and PC builders can save time and make informed choices.</p>
+                </div>
+            </section>
+    
+            <section id="founders" class="about-section">
+                <h2 class="section-title">Founders</h2>
+                <div class="section-content">
+                    <p>Byte Kings was established by a team of passionate computer engineers and tech aficionados who understood the specific challenges that students and novice builders face. Driven by their commitment to affordable tech solutions, the founders have worked to build a trusted marketplace that blends both quality and value for customers of all backgrounds.</p>
+                </div>
+            </section>
+    
+            <section id="mission-vision" class="about-section">
+                <h2 class="section-title">Mission and Vision</h2>
+                <div class="section-content">
+                    <p><strong>Mission:</strong> To empower students and tech enthusiasts by offering high-quality, affordable computer components, expert guidance, and a seamless shopping experience. We aim to be the first choice for tech gear that balances quality and affordability.</p>
+                    <p><strong>Vision:</strong> Byte Kings aspires to be a go-to platform for tech solutions, promoting accessibility and inclusivity in tech for all, especially students and first-time builders. Our vision is to nurture a community where reliable tech is readily available for everyone.</p>
+                </div>
+            </section>
+    
+            <section id="core-values" class="about-section">
+                <h2 class="section-title">Core Values</h2>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>Quality First:</strong> We prioritize high standards to ensure that our products consistently meet or exceed customer expectations.</li>
+                        <li><strong>Affordability:</strong> Byte Kings believes in making tech accessible and budget-friendly, helping our customers find the right products without compromise.</li>
+                        <li><strong>Customer Support:</strong> Expert guidance is a cornerstone of Byte Kings, with a focus on helping each customer feel confident and supported in their tech journey.</li>
+                        <li><strong>Transparency:</strong> Clear, honest communication is paramount, ensuring that our customers always know exactly what they’re getting.</li>
+                        <li><strong>Community-Focused:</strong> Byte Kings is built around the needs of students and enthusiasts, nurturing a welcoming environment where tech knowledge is shared.</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section id="branches" class="about-section">
+                <h2 class="section-title">Branches</h2>
+                <div class="section-content">
+                    <p>Byte Kings currently operates in several key areas to enhance shipping efficiency and support for our users:</p>
+                    <ul>
+                        <li>Metro Manila, Philippines – Our main distribution hub</li>
+                        <li>Cebu, Philippines – Strategic location for quick and efficient service across the region</li>
+                        <li>Davao, Philippines – Local support for tech needs in Mindanao</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section id="contact-info" class="about-section">
+                <h2 class="section-title">Contact Information</h2>
+                <div class="section-content">
+                    <p><strong>Email:</strong> support@bytekingstechshop.com</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Address:</strong> #123 Tech Street, Davao City, Philippines, 8000</p>
+                </div>
+            </section>
+        </div>
     </main>
-
-    <footer>
-        <p>Questions? Call: (123) 456-7890 | Email: info@bytekingstechshop.com</p>
-        <p>#123 Tech Street, Davao City, 8000</p>
-        <div class="social">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Questions? Call: (123) 456-7890 | Email: <a href="mailto:info@bytekingstechshop.com">info@bytekingstechshop.com</a></p>
+            <p>Address: #123 Tech Street, Davao City, Philippines, 8000</p>
+            <div class="social">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
         </div>
     </footer>
 

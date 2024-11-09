@@ -8,182 +8,183 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-top">
-            <div class="hamburger" id="hamburger">&#9776;</div>
-            <div class="logo">
-                <img src="/assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo">
-                <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button><i class="search-icon"></i></button>
-            </div>
-            <div class="cart-login">
-                <a href="/pages/BKLoginandRegister.html#login">Log In</a> |
-                <a href="/pages/BKLoginandRegister.html#register">Register</a>
-                <a href="#"><img src="/assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span></a>
-            </div>
-        </div>
-        <!-- Navigation -->
-        <nav class="desktop-nav">
-            <ul id="nav-list">
-                <li><a href="/index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="/pages/BKShopPage.html">Shop</a>
-                    <ul class="sub-nav">
-                        <li><a href="/pages/BKShopPage.html">Recent Arrivals</a></li>
-                        <li><a href="/pages/BKShopPage.html">Categories</a></li>
-                        <li><a href="/pages/BKShopPage.html">Brands</a></li>
-                        <li><a href="/pages/BKShopPage.html">On Sale</a></li>
-                        <li><a href="/pages/BKShopPage.html">Best Sellers</a></li>
-                        <li><a href="/pages/BKShopPage.html">Limited Edition</a></li>
-                        <li><a href="/pages/BKShopPage.html">Build Your Unit</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="/pages/BKAboutPage.html">About</a>
-                    <ul class="sub-nav">
-                        <li><a href="#background">Background</a></li>
-                        <li><a href="#founders">Founders</a></li>
-                        <li><a href="#mission-vision">Mission & Vision</a></li>
-                        <li><a href="#core-values">Core Values</a></li>
-                        <li><a href="#branches">Branches</a></li>
-                        <li><a href="#contact-info">Contact Information</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="/pages/BKMorePage.html">More</a>
-                    <ul class="sub-nav">
-                        <li><a href="/pages/BKMorePage.html">Privacy Policy</a></li>
-                        <li><a href="/pages/BKMorePage.html">Availability</a></li>
-                        <li><a href="/pages/BKMorePage.html">Payment Methods</a></li>
-                        <li><a href="/pages/BKMorePage.html">Shipping Information</a></li>
-                        <li><a href="/pages/BKMorePage.html">Return and Refund Policy</a></li>
-                        <li><a href="/pages/BKMorePage.html">Warranty and Support</a></li>
-                        <li><a href="/pages/BKMorePage.html">FAQs</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header and Navigation -->
+<header>
+    <div class="header-top">
 
-    <!-- Mobile/Tablet Icons for Search, User, and Cart -->
-    <div class="mobile-icons">
-        <img src="/assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
-        <img src="/assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
-        <a href="#" id="cart-link">
-            <img src="/assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
-            <span class="cart-count">0</span>
-        </a>
+        <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+
+        <div class="logo">
+            <img src="../assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo"> <!-- Adjusted logo image -->
+            <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search product here...">
+            <button><i class="search-icon"></i></button>
+        </div>
+        <div class="cart-login">
+            <a href="../pages/BKLoginandRegister.html#login">Log In</a> |
+            <a href="../pages/BKLoginandRegister.html#register">Register</a>
+            <a href="../pages/BKCartPage.html" id="cart-link">
+                <img src="../assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span>
+            </a>
+        </div>
     </div>
 
-    <!-- Sidebar Navigation for Mobile/Tablet -->
-    <div class="sidebar" id="sidebar">
-        <div class="close-btn" id="close-sidebar">&#x2190;</div>
-        <ul>
-            <li><a href="/index.html" id="sidebar-home">Home</a></li>
+    <nav class="desktop-nav">
+        <ul id="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/BKShopPage.html">Shop</a></li>
             <li class="dropdown">
-                <a href="/pages/BKShopPage.html" id="sidebar-shop" class="dropdown-toggle">Shop</a>
+                <a href="../pages/BKAboutPage.html">About</a>
                 <ul class="sub-nav">
-                    <li><a href="/pages/BKShopPage.html">Recent Arrivals</a></li>
-                    <li><a href="/pages/BKShopPage.html">Categories</a></li>
-                    <li><a href="/pages/BKShopPage.html">Brands</a></li>
-                    <li><a href="/pages/BKShopPage.html">On Sale</a></li>
-                    <li><a href="/pages/BKShopPage.html">Best Sellers</a></li>
-                    <li><a href="/pages/BKShopPage.html">Limited Edition</a></li>
-                    <li><a href="/pages/BKShopPage.html">Build Your Unit</a></li>
+                    <li><a href="../pages/BKAboutPage.html#background">Background</a></li>
+                    <li><a href="../pages/BKAboutPage.html#founders">Founders</a></li>
+                    <li><a href="../pages/BKAboutPage.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="../pages/BKAboutPage.html#core-values">Core Values</a></li>
+                    <li><a href="../pages/BKAboutPage.html#branches">Branches</a></li>
+                    <li><a href="../pages/BKAboutPage.html#contact-info">Contact Information</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="/pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+                <a href="../pages/BKMorePage.html">More</a>
                 <ul class="sub-nav">
-                    <li><a href="#background">Background</a></li>
-                    <li><a href="#founders">Founders</a></li>
-                    <li><a href="#mission-vision">Mission & Vision</a></li>
-                    <li><a href="#core-values">Core Values</a></li>
-                    <li><a href="#branches">Branches</a></li>
-                    <li><a href="#contact-info">Contact Information</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="/pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
-                <ul class="sub-nav">
-                    <li><a href="/pages/BKMorePage.html">Privacy Policy</a></li>
-                    <li><a href="/pages/BKMorePage.html">Availability</a></li>
-                    <li><a href="/pages/BKMorePage.html">Payment Methods</a></li>
-                    <li><a href="/pages/BKMorePage.html">Shipping Information</a></li>
-                    <li><a href="/pages/BKMorePage.html">Return and Refund Policy</a></li>
-                    <li><a href="/pages/BKMorePage.html">Warranty and Support</a></li>
-                    <li><a href="/pages/BKMorePage.html">FAQs</a></li>
+                    <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                    <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                    <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                    <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                    <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
                 </ul>
             </li>
         </ul>
+    </nav>
+</header>
+
+<!-- Mobile/Tablet Icons for Search, User, and Cart -->
+<div class="mobile-icons">
+    <img src="../assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
+    <img src="../assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
+    <a href="../pages/BKCartPage.html" id="cart-link">
+        <img src="../assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
+        <span class="cart-count">0</span>
+    </a>
+</div>
+
+<!-- Sidebar Navigation for Mobile/Tablet -->
+<div class="sidebar" id="sidebar">
+    <div class="close-btn" id="close-sidebar">&#x2190;</div> <!-- Arrow icon for Close Button -->
+    <ul>
+        <li><a href="../index.html" id="sidebar-home">Home</a></li>
+        <li><a href="../pages/BKShopPage.html" id="sidebar-shop">Shop</a></li>
+        <li class="dropdown">
+            <a href="../pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+            <ul class="sub-nav">
+                <li><a href="../pages/BKAboutPage.html">Background</a></li>
+                <li><a href="../pages/BKAboutPage.html">Founders</a></li>
+                <li><a href="../pages/BKAboutPage.html">Mission & Vision</a></li>
+                <li><a href="../pages/BKAboutPage.html">Core Values</a></li>
+                <li><a href="../pages/BKAboutPage.html">Branches</a></li>
+                <li><a href="../pages/BKAboutPage.html">Contact Information</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="../pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
+            <ul class="sub-nav">
+                <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<main class="more-page-content">
+    <div class="container">
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy" class="content-section">
+            <h2 class="section-title">Privacy Policy</h2>
+            <div class="section-content">
+                <p>
+                    At ByteKings, we value your privacy and ensure that your personal information is protected. All data collected from our users is stored securely and only used for transactional purposes, customer service, and marketing communications that you opt into.
+                    For more information, read our complete <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Availability Section -->
+        <section id="availability" class="content-section">
+            <h2 class="section-title">Availability</h2>
+            <div class="section-content">
+                <p>
+                    Our products are available globally, and we work with a wide network of suppliers and distributors to bring the best gadgets to you. Product availability may vary depending on the location, but rest assured we do our best to keep our stocks updated.
+                    Feel free to contact our support team if you need help finding an item in your region.
+                </p>
+            </div>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section id="payment-methods" class="content-section">
+            <h2 class="section-title">Payment Methods</h2>
+            <div class="section-content">
+                <p>
+                    We offer a variety of secure payment methods for your convenience. These include credit/debit cards (Visa, Mastercard, AMEX), PayPal, and Cash on Delivery for select locations.
+                    We also offer installment payment options with our trusted financing partners.
+                </p>
+            </div>
+        </section>
+
+        <!-- Shipping Information Section -->
+        <section id="shipping-info" class="content-section">
+            <h2 class="section-title">Shipping Information</h2>
+            <div class="section-content">
+                <p>
+                    We provide worldwide shipping through reliable courier services. Shipping times and costs may vary based on the destination country.
+                    You will receive a tracking link once your order has shipped, allowing you to follow your package every step of the way.
+                </p>
+            </div>
+        </section>
+
+        <!-- Return and Refund Policy Section -->
+        <section id="return-refund" class="content-section">
+            <h2 class="section-title">Return and Refund Policy</h2>
+            <div class="section-content">
+                <p>
+                    Customer satisfaction is our top priority. If you are not satisfied with your purchase, you can return it within 30 days of receipt.
+                    Please ensure that the product is in its original condition with all packaging intact. Refunds will be processed within 7-14 days after the returned product is inspected.
+                </p>
+            </div>
+        </section>
+
+        <!-- Warranty and Support Section -->
+        <section id="warranty-support" class="content-section">
+            <h2 class="section-title">Warranty and Support</h2>
+            <div class="section-content">
+                <p>
+                    All products come with a 1-year warranty covering manufacturing defects. We provide 24/7 customer support to help troubleshoot issues and assist with warranty claims.
+                    Contact our support team to initiate a warranty claim if your product requires service.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs" class="content-section">
+            <h2 class="section-title">FAQs</h2>
+            <div class="section-content">
+                <p>
+                    Find answers to common questions regarding orders, payments, shipping, and returns on our <a href="#">FAQs page</a>.
+                    For further assistance, reach out to our customer service team.
+                </p>
+            </div>
+        </section>
     </div>
-    
-
-    <!-- Privacy Policy Section -->
-    <section id="privacy-policy" class="content-section">
-        <h2>Privacy Policy</h2>
-        <p>
-            At ByteKings, we value your privacy and ensure that your personal information is protected. All data collected from our users is stored securely and only used for transactional purposes, customer service, and marketing communications that you opt into.
-            For more information, read our complete <a href="#">Privacy Policy</a>.
-        </p>
-    </section>
-
-    <!-- Availability Section -->
-    <section id="availability" class="content-section">
-        <h2>Availability</h2>
-        <p>
-            Our products are available globally, and we work with a wide network of suppliers and distributors to bring the best gadgets to you. Product availability may vary depending on the location, but rest assured we do our best to keep our stocks updated.
-            Feel free to contact our support team if you need help finding an item in your region.
-        </p>
-    </section>
-
-    <!-- Payment Methods Section -->
-    <section id="payment-methods" class="content-section">
-        <h2>Payment Methods</h2>
-        <p>
-            We offer a variety of secure payment methods for your convenience. These include credit/debit cards (Visa, Mastercard, AMEX), PayPal, and Cash on Delivery for select locations.
-            We also offer installment payment options with our trusted financing partners.
-        </p>
-    </section>
-
-    <!-- Shipping Information Section -->
-    <section id="shipping-info" class="content-section">
-        <h2>Shipping Information</h2>
-        <p>
-            We provide worldwide shipping through reliable courier services. Shipping times and costs may vary based on the destination country.
-            You will receive a tracking link once your order has shipped, allowing you to follow your package every step of the way.
-        </p>
-    </section>
-
-    <!-- Return and Refund Policy Section -->
-    <section id="return-refund" class="content-section">
-        <h2>Return and Refund Policy</h2>
-        <p>
-            Customer satisfaction is our top priority. If you are not satisfied with your purchase, you can return it within 30 days of receipt.
-            Please ensure that the product is in its original condition with all packaging intact. Refunds will be processed within 7-14 days after the returned product is inspected.
-        </p>
-    </section>
-
-    <!-- Warranty and Support Section -->
-    <section id="warranty-support" class="content-section">
-        <h2>Warranty and Support</h2>
-        <p>
-            All products come with a 1-year warranty covering manufacturing defects. We provide 24/7 customer support to help troubleshoot issues and assist with warranty claims.
-            Contact our support team to initiate a warranty claim if your product requires service.
-        </p>
-    </section>
-
-    <!-- FAQs Section -->
-    <section id="faqs" class="content-section">
-        <h2>FAQs</h2>
-        <p>
-            Find answers to common questions regarding orders, payments, shipping, and returns on our <a href="#">FAQs page</a>.
-            For further assistance, reach out to our customer service team.
-        </p>
-    </section>
+</main>
 
     <footer>
         <p>Questions? Call: (123) 456-7890 | Email: info@bytekingstechshop.com</p>
@@ -194,7 +195,6 @@
             <a href="#">Twitter</a>
         </div>
     </footer>
-
-    <script src="../js/index.js"></script>
+    <script src="/js/BKMorePage.css"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ html, body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     color: white;
-    background: url('../assets/BackgroundHP.png') no-repeat center center fixed;
+    background: url('../assets/Background6.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -379,33 +379,46 @@ nav ul li a.active:hover {
     }
 }
 
-/* Offset for Fixed Header in the About Page Content */
-.about-page-content {
-    padding-top: 100px; /* Increased top padding to match new header spacing */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 40px;
-}
-
-/* Curved Box Styling with Transparent, Blurry Background */
-.about-section {
-    max-width: 800px; /* Limit the width */
-    width: 100%;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    margin: 0 auto 30px; /* Center and add space between sections */
+    background: rgba(10, 25, 47, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Title Font for Each Section */
-.about-section h2 {
+.content-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
     font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
     color: #36a1ff;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
 }
 
 /* Footer */

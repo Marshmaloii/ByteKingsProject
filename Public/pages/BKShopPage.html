@@ -8,186 +8,264 @@
 </head>
 <body>
 
-    <!-- Header and Navigation -->
-    <header>
-        <div class="header-top">
+<!-- Header and Navigation -->
+<header>
+    <div class="header-top">
 
-            <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">&#9776;</div> <!-- Hamburger icon -->
 
-            <div class="logo">
-                <img src="../assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo"> <!-- Adjusted logo image -->
-                <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search product here...">
-                <button><i class="search-icon"></i></button>
-            </div>
-            <div class="cart-login">
-                <a href="../pages/BKLoginandRegister.html#login">Log In</a> |
-                <a href="../pages/BKLoginandRegister.html#register">Register</a>
-                <a href="#" id="cart-link">
-                    <img src="../assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span>
-                </a>
-            </div>
+        <div class="logo">
+            <img src="../assets/ByteKingsLogo2.png" alt="ByteKings Logo" class="header-logo"> <!-- Adjusted logo image -->
+            <h1><span class="bytekings-font byte">Byte</span><span class="bytekings-font kings">Kings</span></h1>
         </div>
-
-        <nav class="desktop-nav">
-            <ul id="nav-list">
-                <li><a href="../index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="../pages/BKShopPage.html">Shop</a>
-                    <ul class="sub-nav">
-                        <li><a href="../pages/BKShopPage.html">Recent Arrivals</a></li>
-                        <li><a href="../pages/BKShopPage.html">Categories</a></li>
-                        <li><a href="../pages/BKShopPage.html">Brands</a></li>
-                        <li><a href="../pages/BKShopPage.html">On Sale</a></li>
-                        <li><a href="../pages/BKShopPage.html">Best Sellers</a></li>
-                        <li><a href="../pages/BKShopPage.html">Limited Edition</a></li>
-                        <li><a href="../pages/BKShopPage.html">Build Your Unit</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../pages/BKAboutPage.html">About</a>
-                    <ul class="sub-nav">
-                        <li><a href="../pages/BKAboutPage.html#background">Background</a></li>
-                        <li><a href="../pages/BKAboutPage.html#founders">Founders</a></li>
-                        <li><a href="../pages/BKAboutPage.html#mission-vision">Mission & Vision</a></li>
-                        <li><a href="../pages/BKAboutPage.html#core-values">Core Values</a></li>
-                        <li><a href="../pages/BKAboutPage.html#branches">Branches</a></li>
-                        <li><a href="../pages/BKAboutPage.html#contact-info">Contact Information</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="../pages/BKMorePage.html">More</a>
-                    <ul class="sub-nav">
-                        <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
-                        <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
-                        <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
-                        <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
-                        <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
-                        <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
-                        <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Mobile/Tablet Icons for Search, User, and Cart -->
-    <div class="mobile-icons">
-        <img src="../assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
-        <img src="../assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
-        <a href="#" id="cart-link">
-            <img src="../assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
-            <span class="cart-count">0</span>
-        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search product here...">
+            <button><i class="search-icon"></i></button>
+        </div>
+        <div class="cart-login">
+            <a href="../pages/BKLoginandRegister.html#login">Log In</a> |
+            <a href="../pages/BKLoginandRegister.html#register">Register</a>
+            <a href="../pages/BKCartPage.html" id="cart-link">
+                <img src="../assets/shopping-cart.png" alt="Cart"><span class="cart-count">0</span>
+            </a>
+        </div>
     </div>
 
-    <!-- Sidebar Navigation for Mobile/Tablet -->
-    <div class="sidebar" id="sidebar">
-        <div class="close-btn" id="close-sidebar">&#x2190;</div> <!-- Arrow icon for Close Button -->
-        <ul>
-            <li><a href="../index.html" id="sidebar-home">Home</a></li>
+    <nav class="desktop-nav">
+        <ul id="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/BKShopPage.html">Shop</a></li>
             <li class="dropdown">
-                <a href="../pages/BKShopPage.html" id="sidebar-shop" class="dropdown-toggle">Shop</a>
+                <a href="../pages/BKAboutPage.html">About</a>
                 <ul class="sub-nav">
-                    <li><a href="../pages/BKShopPage.html">Recent Arrivals</a></li>
-                    <li><a href="../pages/BKShopPage.html">Categories</a></li>
-                    <li><a href="../pages/BKShopPage.html">Brands</a></li>
-                    <li><a href="../pages/BKShopPage.html">On Sale</a></li>
-                    <li><a href="../pages/BKShopPage.html">Best Sellers</a></li>
-                    <li><a href="../pages/BKShopPage.html">Limited Edition</a></li>
-                    <li><a href="../pages/BKShopPage.html">Build Your Unit</a></li>
+                    <li><a href="../pages/BKAboutPage.html#background">Background</a></li>
+                    <li><a href="../pages/BKAboutPage.html#founders">Founders</a></li>
+                    <li><a href="../pages/BKAboutPage.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="../pages/BKAboutPage.html#core-values">Core Values</a></li>
+                    <li><a href="../pages/BKAboutPage.html#branches">Branches</a></li>
+                    <li><a href="../pages/BKAboutPage.html#contact-info">Contact Information</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="../pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+                <a href="../pages/BKMorePage.html">More</a>
                 <ul class="sub-nav">
-                    <li><a href="../pages/BKAboutPage.html">Background</a></li>
-                    <li><a href="../pages/BKAboutPage.html">Founders</a></li>
-                    <li><a href="../pages/BKAboutPage.html">Mission & Vision</a></li>
-                    <li><a href="../pages/BKAboutPage.html">Core Values</a></li>
-                    <li><a href="../pages/BKAboutPage.html">Branches</a></li>
-                    <li><a href="../pages/BKAboutPage.html">Contact Information</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="../pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
-                <ul class="sub-nav">
-                    <li><a href="../pages/BKMorePage.html">Privacy Policy</a></li>
-                    <li><a href="../pages/BKMorePage.html">Availability</a></li>
-                    <li><a href="../pages/BKMorePage.html">Payment Methods</a></li>
-                    <li><a href="../pages/BKMorePage.html">Shipping Information</a></li>
-                    <li><a href="../pages/BKMorePage.html">Return and Refund Policy</a></li>
-                    <li><a href="../pages/BKMorePage.html">Warranty and Support</a></li>
-                    <li><a href="../pages/BKMorePage.html">FAQs</a></li>
+                    <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                    <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                    <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                    <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                    <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                    <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
                 </ul>
             </li>
         </ul>
-    </div>
+    </nav>
+</header>
+
+<!-- Mobile/Tablet Icons for Search, User, and Cart -->
+<div class="mobile-icons">
+    <img src="../assets/BKSearch.png" alt="Search Icon" class="icon" id="search-icon">
+    <img src="../assets/BKUser.png" alt="User Icon" class="icon" id="user-icon">
+    <a href="../pages/BKCartPage.html" id="cart-link">
+        <img src="../assets/shopping-cart.png" alt="Cart Icon" class="icon" id="cart-icon">
+        <span class="cart-count">0</span>
+    </a>
+</div>
+
+<!-- Sidebar Navigation for Mobile/Tablet -->
+<div class="sidebar" id="sidebar">
+    <div class="close-btn" id="close-sidebar">&#x2190;</div> <!-- Arrow icon for Close Button -->
+    <ul>
+        <li><a href="../index.html" id="sidebar-home">Home</a></li>
+        <li><a href="../pages/BKShopPage.html" id="sidebar-shop">Shop</a></li>
+        <li class="dropdown">
+            <a href="../pages/BKAboutPage.html" id="sidebar-about" class="dropdown-toggle">About</a>
+            <ul class="sub-nav">
+                <li><a href="../pages/BKAboutPage.html">Background</a></li>
+                <li><a href="../pages/BKAboutPage.html">Founders</a></li>
+                <li><a href="../pages/BKAboutPage.html">Mission & Vision</a></li>
+                <li><a href="../pages/BKAboutPage.html">Core Values</a></li>
+                <li><a href="../pages/BKAboutPage.html">Branches</a></li>
+                <li><a href="../pages/BKAboutPage.html">Contact Information</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="../pages/BKMorePage.html" id="sidebar-more" class="dropdown-toggle">More</a>
+            <ul class="sub-nav">
+                <li><a href="../pages/BKMorePage.html#privacy-policy">Privacy Policy</a></li>
+                <li><a href="../pages/BKMorePage.html#availability">Availability</a></li>
+                <li><a href="../pages/BKMorePage.html#payment-methods">Payment Methods</a></li>
+                <li><a href="../pages/BKMorePage.html#shipping-info">Shipping Information</a></li>
+                <li><a href="../pages/BKMorePage.html#return-refund">Return and Refund Policy</a></li>
+                <li><a href="../pages/BKMorePage.html#warranty-support">Warranty and Support</a></li>
+                <li><a href="../pages/BKMorePage.html#faqs">FAQs</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
     <!-- Shop Page Structure -->
     <main>
-        <aside id="filter-sidebar">
-            <div class="filter-section">
-                <h3>Filter by Price</h3>
-                <input type="range" min="0" max="120000" step="1000" id="price-range" oninput="updatePriceRange(this.value)" />
-                <span id="price-range-label">Price: ₱0 — ₱120,000</span>
-            </div>
-
-            <div class="filter-section">
-                <h3>Product Categories</h3>
-                <ul>
-                    <li><input type="checkbox" id="cat-acers" /> Acer (17)</li>
-                    <li><input type="checkbox" id="cat-laptops" /> Laptops (11)</li>
-                    <li><input type="checkbox" id="cat-projectors" /> Projectors (2)</li>
-                    <li><input type="checkbox" id="cat-desktop" /> Desktop (1)</li>
-                </ul>
-            </div>
-
-            <div class="filter-section">
-                <h3>Top Rated Items</h3>
-                <ul>
-                    <li>
-                        <p>Comlink USB 3.0 to LAN Adapter</p>
-                        <p>₱295.00</p>
-                    </li>
-                    <li>
-                        <p>Gigabyte B550M DS3H AM4 Motherboard</p>
-                        <p>₱6,495.00</p>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
         <section id="product-list">
-            <h2>Acer Products</h2>
-            <p>Showing 1-9 of 17 results</p>
-            
             <div class="product-grid" id="products">
+
+                <!-- Product Cards: Mouse -->
                 <div class="product-item">
-                    <img src="../assets/laptop1.jpg" alt="Acer Swift GO"> <!-- Corrected product image path -->
-                    <h3>Acer Swift GO 14</h3>
-                    <p>Intel Core i9, 16GB RAM, 1TB SSD</p>
-                    <p class="price">₱64,495.00</p>
-                    <p>₱6,041.25 / Mo.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8HBxtRjxIDMfF0U2AZYC43j0qvOiHn3_eg&s" alt="Logitech MX Master 3s">
+                    <h3>Logitech MX Master 3s</h3>
+                    <p class="category">Category: Mouse</p>
+                    <p class="brand">Logitech</p>
+                    <p class="price">₱5,495.00</p>
+                    <p class="down-payment">₱1,099 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
                 </div>
 
                 <div class="product-item">
-                    <img src="../assets/laptop2.jpg" alt="Acer Aspire 3"> <!-- Corrected product image path -->
-                    <h3>Acer Aspire 3</h3>
-                    <p>AMD Ryzen 7, 16GB RAM, 512GB SSD</p>
-                    <p class="price">₱36,995.00</p>
-                    <p>₱3,454.17 / Mo.</p>
+                    <img src="https://i.rtings.com/assets/products/yFR9Pt3Z/razer-naga-pro/design-large.jpg?format=auto" alt="Razer Naga Pro">
+                    <h3>Razer Naga Pro</h3>
+                    <p class="category">Category: Mouse</p>
+                    <p class="brand">Razer</p>
+                    <p class="price">₱6,995.00</p>
+                    <p class="down-payment">₱1,299 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Cards: Keyboard -->
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiex2Awby311uG2rgyUt0L2MdFhwBpNVXLvTP5dJ5ItXBLgr8opkUk7wcIW5ASKIndInA&usqp=CAU" alt="Razer Pro Type Ultra">
+                    <h3>Razer Pro Type Ultra</h3>
+                    <p class="category">Category: Keyboard</p>
+                    <p class="brand">Razer</p>
+                    <p class="price">₱7,995.00</p>
+                    <p class="down-payment">₱1,499 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
                 </div>
 
                 <div class="product-item">
-                    <img src="../assets/laptop3.jpg" alt="Acer Aspire 15"> <!-- Corrected product image path -->
-                    <h3>Acer Aspire 15</h3>
-                    <p>Intel Core i3, 8GB RAM, 512GB SSD</p>
-                    <p class="price">₱27,995.00</p>
-                    <p>₱2,632.92 / Mo.</p>
+                    <img src="https://ecommerce.datablitz.com.ph/cdn/shop/products/us-pro-gaming-keyboard-gallery-topdown.jpg?v=1676868360" alt="Logitech G PRO Mechanical Keyboard">
+                    <h3>Logitech G PRO Mechanical Keyboard</h3>
+                    <p class="category">Category: Keyboard</p>
+                    <p class="brand">Logitech</p>
+                    <p class="price">₱6,495.00</p>
+                    <p class="down-payment">₱1,299 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
                 </div>
+
+                <!-- Product Cards: Processor -->
+                <div class="product-item">
+                    <img src="https://easypc.com.ph/cdn/shop/products/12th_Generation_Intel_Core_i9-12900K_1700_CPU-a_2048x.jpg?v=1702871296" alt="Intel Core i9-12900K">
+                    <h3>Intel Core i9-12900K</h3>
+                    <p class="category">Category: Processor</p>
+                    <p class="brand">Intel</p>
+                    <p class="price">₱29,995.00</p>
+                    <p class="down-payment">₱2,999 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgclqUJWvNvkeiUgZkktCF7CO9QsZbnnnIg&s" alt="AMD Ryzen 9 5950X">
+                    <h3>AMD Ryzen 9 5950X</h3>
+                    <p class="category">Category: Processor</p>
+                    <p class="brand">AMD</p>
+                    <p class="price">₱42,995.00</p>
+                    <p class="down-payment">₱3,799 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Cards: Graphics Card -->
+                <div class="product-item">
+                    <img src="https://i.ebayimg.com/images/g/ChsAAOSwXrpfbI4~/s-l500.jpg" alt="NVIDIA GeForce RTX 3080">
+                    <h3>NVIDIA GeForce RTX 3080</h3>
+                    <p class="category">Category: Graphics Card</p>
+                    <p class="brand">NVIDIA</p>
+                    <p class="price">₱62,995.00</p>
+                    <p class="down-payment">₱5,499 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="https://asset.msi.com/resize/image/global/product/product_4_20191016165654_5da6db5683982.png62405b38c58fe0f07fcef2367d8a9ba1/600.png" alt="MSI Gaming GeForce GTX 1660 Super">
+                    <h3>MSI Gaming GeForce GTX 1660 Super</h3>
+                    <p class="category">Category: Graphics Card</p>
+                    <p class="brand">MSI</p>
+                    <p class="price">₱22,995.00</p>
+                    <p class="down-payment">₱1,999 / Mo.</p>
+                    <div class="cart-actions">
+                        <button class="cart-button">
+                            <img src="../assets/shopping-cart.png" alt="Add to Cart">
+                            + Cart
+                        </button>
+                        <button class="remove-button">
+                            <img src="../assets/shopping-cart.png" alt="Remove from Cart">
+                            - Cart
+                        </button>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </main>

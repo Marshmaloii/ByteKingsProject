@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../assets/Background3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.cart-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    color: #36a1ff;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #36a1ff;
+}
+
+.cart-item-details p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.remove-cart-item {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.remove-cart-item:hover {
+    background-color: #ff1a1a;
+}
+
+.cart-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-to-shop-button,
+.checkout-button {
+    background-color: #36a1ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 45%;
+}
+
+.back-to-shop-button:hover,
+.checkout-button:hover {
+    background-color: #2b82cc;
+}

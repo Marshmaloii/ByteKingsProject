@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('register-form');
     const showRegister = document.getElementById('show-register');
     const showLogin = document.getElementById('show-login');
-    const loginLink = document.getElementById('login-link');
-    const registerLink = document.getElementById('register-link');
 
     // Toggle between login and register forms
     showRegister.addEventListener('click', () => {
@@ -37,21 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Listen for changes to the URL hash
     window.addEventListener('hashchange', showFormBasedOnHash);
 
-    // Attach click event listeners to ensure the correct form is displayed when the links are clicked
-    if (loginLink) {
-        loginLink.addEventListener('click', function () {
-            window.location.hash = '#login';
-            showFormBasedOnHash();
-        });
-    }
-
-    if (registerLink) {
-        registerLink.addEventListener('click', function () {
-            window.location.hash = '#register';
-            showFormBasedOnHash();
-        });
-    }
-
     // Login Form Validation
     const loginEmail = document.getElementById('login-email');
     const loginPassword = document.getElementById('login-password');
@@ -59,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginPasswordError = document.getElementById('login-password-error');
 
     document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevent form from submitting normally
         let valid = true;
 
         // Validate Email
@@ -81,8 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
             loginPasswordError.style.display = 'none';
         }
 
-        if (!valid) {
-            e.preventDefault();
+        if (valid) {
+            // Show success message and redirect to homepage
+            alert("Successfully logged in!");
+            window.location.href = '../index.html';
         }
     });
 
@@ -100,12 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerAddressError = document.getElementById('register-address-error');
 
     document.getElementById('registerForm').addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevent form from submitting normally
         let valid = true;
 
-        // Validate Name
-        if (registerName.value.trim() === '') {
+        // Validate Name (no numbers or special characters)
+        const nameRegex = /^[a-zA-Z\s]+$/;
+        if (!nameRegex.test(registerName.value.trim())) {
             registerName.classList.add('error');
             registerNameError.style.display = 'block';
+            registerNameError.textContent = 'Name must not contain numbers or special characters';
             valid = false;
         } else {
             registerName.classList.remove('error');
@@ -132,10 +121,12 @@ document.addEventListener('DOMContentLoaded', function() {
             registerPasswordError.style.display = 'none';
         }
 
-        // Validate Contact Number
-        if (registerContact.value.trim() === '') {
+        // Validate Contact Number (numbers only, 10 digits)
+        const contactRegex = /^\d{10}$/;
+        if (!contactRegex.test(registerContact.value.trim())) {
             registerContact.classList.add('error');
             registerContactError.style.display = 'block';
+            registerContactError.textContent = 'Contact number must be 10 digits';
             valid = false;
         } else {
             registerContact.classList.remove('error');
@@ -152,47 +143,11 @@ document.addEventListener('DOMContentLoaded', function() {
             registerAddressError.style.display = 'none';
         }
 
-        if (!valid) {
-            e.preventDefault();
-        }
-    });
-
-    // Redirect to login/register based on cart-login links
-    const loginCartLink = document.querySelector('.cart-login a[href*="BKLoginandRegister.html"][href*="#login"]');
-    const registerCartLink = document.querySelector('.cart-login a[href*="BKLoginandRegister.html"][href*="#register"]');
-
-    if (loginCartLink) {
-        loginCartLink.addEventListener('click', function () {
+        if (valid) {
+            // Show success message and redirect to login page
+            alert("Successfully registered!");
             window.location.hash = '#login';
             showFormBasedOnHash();
-        });
-    }
-
-    if (registerCartLink) {
-        registerCartLink.addEventListener('click', function () {
-            window.location.hash = '#register';
-            showFormBasedOnHash();
-        });
-    }
-
-    // Move buttons side-by-side
-    const loginButton = document.querySelector('button[type="submit"]#loginButton');
-    const registerButton = document.querySelector('button[type="submit"]#registerButton');
-    const backButton = document.querySelector('.back-button');
-
-    if (loginButton && backButton) {
-        const buttonContainer = document.createElement('div');
-        buttonContainer.classList.add('button-container');
-        loginForm.appendChild(buttonContainer);
-        buttonContainer.appendChild(loginButton);
-        buttonContainer.appendChild(backButton);
-    }
-
-    if (registerButton && backButton) {
-        const buttonContainer = document.createElement('div');
-        buttonContainer.classList.add('button-container');
-        registerForm.appendChild(buttonContainer);
-        buttonContainer.appendChild(registerButton);
-        buttonContainer.appendChild(backButton);
-    }
+        }
+    });
 });

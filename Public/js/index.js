@@ -78,3 +78,14 @@ document.getElementById('cart-link').addEventListener('click', function() {
     // Your cart handling code here
     console.log('Cart link clicked');
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    updateCartCount();
+
+    function updateCartCount() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        document.querySelector('.cart-count').textContent = cart.length;
+    }
+
+    // If you have "Add to Cart" buttons elsewhere in your app, call `updateCartCount()` after adding an item
+});

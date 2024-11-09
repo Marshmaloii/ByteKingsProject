@@ -10,6 +10,16 @@ closeSidebar.addEventListener("click", () => {
     sidebar.classList.remove("show-sidebar");
 });
 
+// Smooth scroll behavior
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 document.querySelectorAll('.sub-nav a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
